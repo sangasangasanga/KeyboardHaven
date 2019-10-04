@@ -61,31 +61,39 @@ $(function() {
 				switch(e.res) {
 					case 1: 
 						//Store id into session and is loggined, store the time logged in too
+						changeFormElementValidity("#login_remarks", "text-success");
 						changeElementText("#login_remarks", "Success");
+
 						window.location.replace("index.php");
 						// location.reload();
 						break;
 					case 0:
 						//Print Email doesnt exist at the form remarks
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Email does not exist.");
 						break;
 
 					case -1:
 						//Invalid Email
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Invalid Email.");
 						break;
 					case -2:
 						//Invalid password input
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Invalid password.");
 						break;
 					case -3:
 						//Password is incorrect, increase try counter by 1
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Incorrect password, please try again.");
 						break;
 					case -4:
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Your account is locked. Please contact administrator.");
 						break;
 					case -5:
+						changeFormElementValidity("#login_remarks", "text-danger");
 						changeElementText("#login_remarks", "Please verify your account.");
 						break;
 				}

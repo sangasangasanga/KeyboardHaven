@@ -6,7 +6,7 @@
   <title>KeyboardHaven</title>
 
   <?php include('./cssJsIncludes.php'); ?>  
-  <?php require('./lib/Medoo/db.php'); ?>
+  <?php //require('./lib/Medoo/db.php'); ?>
   <?php require('./lib/Zebra-Session-master/Zebra_Session.php'); ?>
   <?php include('./session_handles.php'); ?>
   <?php require('lib/Aris/aris.php'); ?>

@@ -1,5 +1,5 @@
 <?php 
-	require_once('./lib/Zebra-Session-master/Zebra_Session.php');
+	require_once('C:/xampp/htdocs/KeyboardHaven/lib/Zebra-Session-master/Zebra_Session.php');
 
 	// Change consts for easy updating, Change them to suit your database.
 	define("DB_HOST_OR_IP",			"localhost");

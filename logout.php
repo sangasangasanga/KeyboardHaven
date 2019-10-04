@@ -1,8 +1,9 @@
 <?php 
   
   include('./session_handles.php'); 
-  // include('./functions/database_functions.php');
- 
+  include('./functions/database_functions.php');
+  
+  insertLogoutTime($_SESSION['email']);
   unset($_SESSION['email']);
   unset($_SESSION['is_admin']);
 

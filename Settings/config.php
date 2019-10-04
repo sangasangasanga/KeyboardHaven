@@ -1,0 +1,1 @@
+<?php DEFINE("ROOT_PATH", "C:/xampp/htdocs/KeyboardHaven/"); ?> 

@@ -16,11 +16,27 @@
 <body>
   <!-- Navigation Bar -->
   <header>
+
     <?php include("./homepage/noticeMessage.php"); ?>
     <?php include("./homepage/navBar.php"); ?>
-    <?php include("./database_functions.php"); ?>
+    
 
   </header>
+
+  <?php  //insertNoticeMessageToDB("testsc" ,"jeromedog123")
+    //echo getLastestNoticeMessage();
+
+    // updateShippingDetails("msndocument@hotmail.com", "pat", "kang", "Kovan Road", "test", "singapore", "548193");
+    // $res = getShippingDetails("msndocument@hotmail.com");
+  // echo date('Y-m-d H:i:s');
+
+  insertLogoutTime("msndocument@hotmail.com");
+
+  
+  ?>
+
+
+
 
     <div class="container box-shadow-full shadow bg-grey " style="max-width:80%;margin-top:20px;">
       <div class="row">
@@ -34,7 +50,6 @@
     
   
     
-    <?php getHashedPasswordFromDatabase("msndocument@hotmail.com"); ?>
 
     <div class="container box-shadow-full shadow bg-sky-blue" style="max-width:80%;margin-top:20px;">
       <?php 

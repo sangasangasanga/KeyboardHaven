@@ -129,7 +129,7 @@ function displayAllItemsOnCards($id, $item_name, $item_price, $item_file_path) {
 
   <?php include('./cssJsIncludes.php'); ?>
   
-  <?php require('./lib/Medoo/db.php'); ?>
+  <?php //require('./lib/Medoo/db.php'); ?>
 
   <?php include('./session_handles.php'); ?>
 

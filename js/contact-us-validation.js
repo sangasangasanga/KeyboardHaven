@@ -8,15 +8,6 @@ $(function() {
 							sent_remarks_id:"#sent_remarks" };
 
 
-	// function checkIfSubjectIsChosen(select_id) { 
-	// 	console.log($(select_id).children("option:selected").text());
-	// 	if (
-	// 	console.log($(select_id).children("option:selected").text()) == "Choose One:") {
-	// 		return false;
-	// 	} else {
-	// 		return true;
-	// 	}
-	// }
 
 	$("#cnt_name_input").focusout(function() {
 		//Check if name only has acceptable characters to prevent XSS

@@ -1,7 +1,7 @@
 
-<?php include('./login_modal.php'); ?>
-<?php include('./signup_modal.php'); ?>
-<?php include('./cart_modal.php'); ?> 
+<?php include(ROOT_PATH.'login_modal.php'); ?>
+<?php include(ROOT_PATH.'signup_modal.php'); ?>
+<?php include(ROOT_PATH.'cart_modal.php'); ?> 
 
 <?php
 
@@ -22,7 +22,7 @@ function loadAdminTab() {
                         ['li',
                             'class' => 'dropdown-item',
                             ['a',
-                                'href' => '',
+                                'href' => 'admin_manage_accounts.php',
                                 'class' => 'nav-link',
                                 'Manage Accounts'
                             ]
@@ -30,7 +30,7 @@ function loadAdminTab() {
                         ['li',
                             'class' => 'dropdown-item',
                             ['a',
-                                'href' => '#', 
+                                'href' => 'admin_manage_orders.php', 
                                 'class' => 'nav-link',
                                 'Manage Orders'
                             ]
@@ -38,7 +38,7 @@ function loadAdminTab() {
                         ['li',
                             'class' => 'dropdown-item',
                             ['a',
-                                'href' => '#',
+                                'href' => 'admin_manage_products.php',
                                  'class' => 'nav-link',
                                  'Manage Products'
                              ]
@@ -46,7 +46,7 @@ function loadAdminTab() {
                         ['li',
                             'class' => 'dropdown-item',
                             ['a',
-                                'href' => '#',
+                                'href' => 'admin_view_messages.php',
                                  'class' => 'nav-link',
                                  'Messages'
                              ]
@@ -54,7 +54,7 @@ function loadAdminTab() {
                         ['li',
                             'class' => 'dropdown-item',
                             ['a',
-                                'href' => '#',
+                                'href' => 'admin_change_notice.php',
                                  'class'=> 'nav-link',
                                  'Change Notice'
                             ]
@@ -89,7 +89,7 @@ function loadUserTab() {
                 ['ul', 'class' => 'dropdown-menu',
                     ['span', 'class' => 'user-menu-name',
                         ['p', 'class' => 'lead dropdown-item-text', 'Welcome'],
-                        ['p', 'class' => 'lead dropdown-item-text text-truncate', returnNameFromEmail($_SESSION['email'])],
+                        ['p', 'id' => 'nav_user', 'class' => 'lead dropdown-item-text text-truncate', returnNameFromEmail($_SESSION['email'])],
                     ],
                     
                     ['div', 'class' => 'dropdown-divider'],
@@ -99,7 +99,7 @@ function loadUserTab() {
                     ],
                     ['li', 
                         'class' => 'dropdown-item',
-                        ['a', 'href' => 'logout.php', 'class' => 'nav-link', "Settings"]
+                        ['a', 'href' => 'user_settings.php', 'class' => 'nav-link', "Profile"]
                     ],
                     ['li',
                         'class' => 'dropdown-item',
@@ -135,6 +135,7 @@ function loadUserTab() {
     }
 }
 ?>
+
 
 <nav id="mainNav" class="navscroll navbar navbar-b navbar-trans sticky-top bg-dark" >
     <div class="navbar container-fluid navbar-expand-lg py-0">
@@ -191,7 +192,7 @@ function loadUserTab() {
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#blogs">Blogs</a>
+                    <a class="nav-link" href="blog_index.php">Blogs</a>
                 </li>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle">More</a>
                     <ul class="dropdown-menu">

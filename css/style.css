@@ -1,4 +1,30 @@
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
 
+.dot.dot-success {
+  background-color:#00ff55;
+  /*color:green;*/
+}
+
+.dot.dot-success:hover {
+  background-color:#00cc44;
+  /*color:green;*/
+}
+
+.dot.dot-fail {
+  background-color:#sff6666;
+  /*color:green;*/
+}
+
+.dot.dot-fail:hover {
+  background-color:#ff1a1a;
+  /*color:green;*/
+}
 
 .cart-cross {
   margin-left:150px;

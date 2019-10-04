@@ -1,13 +1,13 @@
-<div id="bannder_Slider" class="carousel slide" data-ride="carousel">
+<div id="bannder_Slider" class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#bannder_Slider" data-slide-to="0" class="active"></li>
     <li data-target="#bannder_Slider" data-slide-to="1"></li>
     <li data-target="#bannder_Slider" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner unselectable" role="listbox">
     <!-- Banner 1 -->
     <div class="carousel-item active">
-      <a><img class="d-block w-100 img-responsive" style="height:400px; width:100%;" src="img/Banners/1.png"></a>
+      <a><img class="d-block w-100 img-responsive" style="height:auto; width:100%;" src="img/Banners/1.png"></a>
       <div class="carousel-caption d-none d-md-block">
         
         <p class="lead">ft. Ducky Shine</p>
@@ -15,13 +15,13 @@
     </div>
     <!-- Banner 2-->
     <div class="carousel-item">
-      <a><img class="d-block w-100 img-responsive" style="height:400px; width:100%;" src="img/Banners/2.png"></a>
+      <a><img class="d-block w-100 img-responsive" style="height:auto; width:100%;" src="img/Banners/2.png"></a>
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <!-- Banner 3 -->
     <div class="carousel-item">
-      <a><img class="d-block w-100 img-responsive" style="height:400px; width:100%;" src="img/Banners/apexPro.png"></a>
+      <a><img class="d-block w-100 img-responsive" style="height:auto; width:100%;" src="img/Banners/apexPro.png"></a>
       <div class="carousel-caption d-none d-md-block">
             
       </div>

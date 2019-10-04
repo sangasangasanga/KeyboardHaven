@@ -9,7 +9,7 @@
   <?php include('./cssJsIncludes.php'); ?>
   <?php include('./session_handles.php'); ?>  
   <?php include('./lib/aris/aris.php'); ?>
-  <?php include('./functions/database_functions.php'); ?>
+  <?php //include('./functions/database_functions.php'); ?>
 
 </head>
 <body>
@@ -33,20 +33,8 @@
     </p>
   </div>
 
-   <!--  <div class="jumbotron-fluid box-shadow-full shadow bg-grey " >
-      <div class="row">
-        <div class="col-sm-12 col-lg-12 py-0">
-          <h2 class="lead text-center">An verification email has been sent to your email. Please clink on the link provided in the email.</h2>
-        </div>
-        </div>
-      </div>
-    </div> -->
 
-    <!-- <div class="container box-shadow-full shadow bg-sky-blue" style="max-width:80%;margin-top:20px;">
-  
-    </div>    -->
-    <!--- Banner Slider -->
-    <?php include("./footer.php"); ?>
+  <?php include("./footer.php"); ?>
 
 
   </body>
